@@ -60,8 +60,8 @@ const Contact = () => {
 
             <form 
             // action="https://getform.io/f/bejeyyka" 
-            // data-netlify="true"
-            action="https://formsubmit.co/vaddadirushikesh@gmail.com"
+            data-netlify="true"
+            // action="https://formsubmit.co/vaddadirushikesh@gmail.com"
             method="POST"
             className="xl:pl-10 2xl:pl-20 "
             >
