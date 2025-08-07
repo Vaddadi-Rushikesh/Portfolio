@@ -9,7 +9,7 @@ import Work from "./components/Work";
 import Review from "./components/Review";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import { Education, Internships } from './components/EducationInternships';
+// import { Education, Internships } from './components/EducationInternships';
 import Qualifications from './components/Qualifications';
 
 const App =() =>{
@@ -21,11 +21,8 @@ const App =() =>{
       <Hero/>
       <About/>
       <Skill/>
-      {/* <Education />
-      <Internships /> */}
       <Qualifications/>
       <Work/>
-      {/* <Review/> */}
       <Contact/>
     </main>
     <Footer/>

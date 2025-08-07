@@ -2,28 +2,34 @@ import ProjectCard from "./ProjectCard"
 
 const works =[
     {
-        imgSrc : '/images/project-1.jpg',
-        title: 'Full Stack music app',
-        tags: ['API','MVC', 'Development'],
-        projectLink: 'www.google.com'
+        imgSrc : '/images/esmg.png',
+        title: 'Entertainment and Social media Guide',
+        tags: [ 'Machine Learning', 'MERN','Deep Learning', 'MongoDB | SQL'],
+        projectLink: 'https://github.com/Vaddadi-Rushikesh/Entertainment_and_Social_Media_Guide'
     },
     {
-        imgSrc : '/images/project-2.jpg',
-        title: 'Free stock photo app',
-        tags: ['API','MVC', 'Development'],
-        projectLink: 'www.google.com'
+        imgSrc : '/images/weather-prediction.png',
+        title: 'Weather Prediction',
+        tags: ['HTML','CSS', 'JavaScript','Machine Learning'],
+        projectLink: 'https://weather-tracking-16.netlify.app/'
     },
     {
-        imgSrc : '/images/project-1.jpg',
-        title: 'Full Stack music app',
-        tags: ['API','MVC', 'Development'],
-        projectLink: 'www.google.com'
+        imgSrc : '/images/temperature-conv.png',
+        title: 'Temperature converter',
+        tags: ['HTML','CSS', 'JavaScript'],
+        projectLink: 'https://temperature-converter-4225.netlify.app/'
     },
     {
-        imgSrc : '/images/project-2.jpg',
-        title: 'Free stock photo app',
-        tags: ['API','MVC', 'Development'],
-        projectLink: 'www.google.com'
+        imgSrc : '/images/stop-watch.png',
+        title: 'Stop watch app',
+        tags: ['HTML','CSS', 'JavaScript'],
+        projectLink: 'https://stop-watch-4225.netlify.app/'
+    },
+    {
+        imgSrc : '/images/calculator.png',
+        title: 'Calculator',
+        tags: ['HTML','CSS', 'JavaScript'],
+        projectLink: 'https://calculator-6595.netlify.app/'
     }
 ]
 

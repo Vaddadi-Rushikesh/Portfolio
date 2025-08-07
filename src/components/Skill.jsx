@@ -1,6 +1,4 @@
-
 import SkillCard from './SkillCard';
-
 
 const skillItem = [
   {
@@ -81,10 +79,9 @@ const skillItem = [
   {
     imgSrc: '/images/jupyter.svg',
     label: 'Jupyter Notebook',
-    desc: 'Version Control'
+    desc: 'Interactive programming'
   },
 ];
-
 
 const Skill = () => {
   return (
@@ -99,7 +96,7 @@ const Skill = () => {
                 Discover the powerful tools and technologies I use to create exceptional, high-performing websites & applications.
             </p>
 
-            <div className="grid gap-3 grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]">
+            <div className="grid gap-3 grid-cols-2 sm:grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]">
                 {
                     skillItem.map(({imgSrc, label, desc },key) =>(
                         <SkillCard 
@@ -117,4 +114,4 @@ const Skill = () => {
   )
 }
 
-export default Skill
+export default Skill;

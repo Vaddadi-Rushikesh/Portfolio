@@ -1,95 +1,92 @@
-// node modules
+// Button.jsx
 
+// node modules
 import PropTypes from 'prop-types';
 
-// Prmimary button
+// Primary button
 const ButtonPrimary = ({
     href,
     target = '_self',
     label,
     icon,
-    classes
+    classes = '',
+    download // ✅ New download prop
 }) => {
-    if(href){
-        return(
+    if (href) {
+        return (
             <a
-             href={href}
-             target={target}
-             className={"btn btn-primary"+classes}
+                href={href}
+                target={target}
+                download={download} // ✅ Applies download attribute if true
+                className={"btn btn-primary " + classes}
             >
                 {label}
-                {icon ?
-                    <span className="material-symbols-rounded"
-                    aria-hidden="true">
+                {icon ? (
+                    <span className="material-symbols-rounded" aria-hidden="true">
                         {icon}
                     </span>
-                    :undefined
-                    }
+                ) : null}
             </a>
-        )
-    }else{
-        return(
-            <button className={"btn btn-primary "+ classes}>
+        );
+    } else {
+        return (
+            <button className={"btn btn-primary " + classes}>
                 {label}
-                {icon ?
-                    <span className="material-symbols-rounded"
-                    aria-hidden="true">
+                {icon ? (
+                    <span className="material-symbols-rounded" aria-hidden="true">
                         {icon}
                     </span>
-                    :undefined
-                    }
+                ) : null}
             </button>
-        )
+        );
     }
-}
+};
 
 ButtonPrimary.propTypes = {
     label: PropTypes.string.isRequired,
     href: PropTypes.string,
     target: PropTypes.string,
     icon: PropTypes.string,
-    classes: PropTypes.string
-}
+    classes: PropTypes.string,
+    download: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]) // ✅ Added prop type
+};
 
+// Outline button
 const ButtonOutline = ({
     href,
     target = '_self',
     label,
     icon,
-    classes
+    classes = ''
 }) => {
-    if(href){
-        return(
+    if (href) {
+        return (
             <a
-             href={href}
-             target={target}
-             className={"btn btn-outline"+classes}
+                href={href}
+                target={target}
+                className={"btn btn-outline " + classes}
             >
                 {label}
-                {icon ?
-                    <span className="material-symbols-rounded"
-                    aria-hidden="true">
+                {icon ? (
+                    <span className="material-symbols-rounded" aria-hidden="true">
                         {icon}
                     </span>
-                    :undefined
-                    }
+                ) : null}
             </a>
-        )
-    }else{
-        return(
-            <button className={"btn btn-outline "+ classes}>
+        );
+    } else {
+        return (
+            <button className={"btn btn-outline " + classes}>
                 {label}
-                {icon ?
-                    <span className="material-symbols-rounded"
-                    aria-hidden="true">
+                {icon ? (
+                    <span className="material-symbols-rounded" aria-hidden="true">
                         {icon}
                     </span>
-                    :undefined
-                    }
+                ) : null}
             </button>
-        )
+        );
     }
-}
+};
 
 ButtonOutline.propTypes = {
     label: PropTypes.string.isRequired,
@@ -97,9 +94,9 @@ ButtonOutline.propTypes = {
     target: PropTypes.string,
     icon: PropTypes.string,
     classes: PropTypes.string
-}
+};
 
 export {
     ButtonPrimary,
     ButtonOutline
-}
+};

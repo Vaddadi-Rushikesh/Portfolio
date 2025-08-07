@@ -3,52 +3,61 @@ import React from 'react';
 const Qualifications = () => {
   const experienceData = [
     {
-      company: "TechCorp Solutions (Bangalore, Karnataka)",
-      role: "Full Stack Developer",
+      company: "Web Developer Intern, Teachnook ",
+      role: "Web Developer",
       description: "(In collaboration with React, Node.js, MongoDB)",
-      duration: "May 2024 - August 2024"
+      duration: "June 2024 - July 2024"
     },
     {
-      company: "DataInsights Analytics (Mumbai, Maharashtra)",
-      role: "Data Analyst",
+      company: " Prodigy Infotech",
+      role: "Web Developer",
       description: "",
-      duration: "December 2023 - February 2024"
+      duration: "May 2024"
     },
     {
-      company: "StartupXYZ (Delhi, India)",
-      role: "Frontend Developer",
+      company: " Codsoft",
+      role: "Web Developer",
       description: "",
-      duration: "June 2023 - August 2023"
+      duration: "May 2024"
     },
-    {
-      company: "WebTech Solutions (Pune, Maharashtra)",
-      role: "Web Developer Intern",
-      description: "",
-      duration: "March 2023 - May 2023"
-    },
-    {
-      company: "DevCorp Technologies (Chennai, Tamil Nadu)",
-      role: "Software Developer Intern",
-      description: "",
-      duration: "January 2023 - March 2023"
-    }
+    // {
+    //   company: "StartupXYZ (Delhi, India)",
+    //   role: "Frontend Developer",
+    //   description: "",
+    //   duration: "June 2023 - August 2023"
+    // },
+    // {
+    //   company: "WebTech Solutions (Pune, Maharashtra)",
+    //   role: "Web Developer Intern",
+    //   description: "",
+    //   duration: "March 2023 - May 2023"
+    // },
+    // {
+    //   company: "DevCorp Technologies (Chennai, Tamil Nadu)",
+    //   role: "Software Developer Intern",
+    //   description: "",
+    //   duration: "January 2023 - March 2023"
+    // }
   ];
 
   const educationData = [
     {
-      institution: "Indian Institute of Technology (Delhi, India)",
-      degree: "B. Tech Computer Science",
-      duration: "2021 - Present"
+      institution: "Centurion University of Technology and Management, Parlakhemundi",
+      degree: "Bachelor of Technology in Computer Science and Engineering: ",
+      duration: "2022 - Present",
+      marks: "CGPA - 9.37 Contd."
     },
     {
-      institution: "Delhi Public School (New Delhi, India)",
+      institution: "SKCG Higher Secondary School, Paralakhemundi ",
       degree: "+2 Science",
-      duration: "2019 - 2021"
+      duration: "2020 - 2022",
+      marks: "Achieved - 81%"
     },
     {
-      institution: "St. Xavier's School (Delhi, India)",
+      institution: "Sri Jagannath High School, Sidhamadanga",
       degree: "10th",
-      duration: "2017 - 2019"
+      duration: "2020",
+      marks: "Achieved - 68% "
     }
   ];
 
@@ -58,8 +67,8 @@ const Qualifications = () => {
         
         {/* Header */}
         <div className="text-center mb-16">
-          {/* <p className="text-sky-400 text-sm font-medium mb-2 tracking-wide">My Odyssey</p>  */}
-          <h1 className="headline-1">Qualifications</h1>
+          {/* <p className="text-sky-400 text-sm font-medium mb-2 tracking-wide">My Odyssey</p> */}
+          <h1 className="headline-2">Qualifications</h1>
         </div>
 
         {/* Two Column Layout */}
@@ -133,11 +142,16 @@ const Qualifications = () => {
                     <p className="text-zinc-300 mb-1">
                       {edu.degree}
                     </p>
-                    <div className="flex items-center text-sky-400 text-sm">
-                      <span className="material-symbols-rounded text-[16px] mr-1">
-                        calendar_month
-                      </span>
-                      {edu.duration}
+                    <div className="flex items-center justify-between mb-2">
+                      <div className="flex items-center text-sky-400 text-sm">
+                        <span className="material-symbols-rounded text-[16px] mr-1">
+                          calendar_month
+                        </span>
+                        {edu.duration}
+                      </div>
+                      <div className="text-emerald-400 font-semibold text-sm">
+                        {edu.marks}
+                      </div>
                     </div>
                   </div>
                 </div>

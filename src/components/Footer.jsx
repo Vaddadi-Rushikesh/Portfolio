@@ -11,12 +11,12 @@ const sitemap = [
     href: '#about'
   },
   {
-    label: 'Work',
-    href: '#work'
+    label: 'Qualifications',
+    href: '#qualifications'
   },
   {
-    label: 'Reviews',
-    href: '#reviews'
+    label: 'Work',
+    href: '#work'
   },
   {
     label: 'Contact me',
@@ -27,24 +27,24 @@ const sitemap = [
 const socials = [
   {
     label: 'GitHub',
-    href: 'https://www.github.com/codewithsadee-org'
+    href: 'https://github.com/Vaddadi-Rushikesh'
   },
   {
     label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/codewithsadee'
+    href: 'https://www.linkedin.com/in/vaddadi-rushikesh-79951125a/'
   },
-  {
-    label: 'Twitter X',
-    href: 'https://x.com/codewithsadee_'
-  },
+  // {
+  //   label: 'Twitter X',
+  //   href: 'https://x.com/codewithsadee_'
+  // },
   {
     label: 'Instagram',
-    href: 'https://www.instagram.com/codewithsadee'
+    href: 'https://www.instagram.com/____r.u.s.h.i___7/'
   },
-  {
-    label: 'CodePen',
-    href: 'https://codepen.io/codewithsadee'
-  }
+  // {
+  //   label: 'CodePen',
+  //   href: 'https://codepen.io/codewithsadee'
+  // }
 ];
 
 const Footer = () => {
