@@ -46,11 +46,11 @@ const skillItem = [
     label: 'TailwindCSS',
     desc: 'User Interface'
   },
-  {
-    imgSrc: '/images/c.svg',
-    label: 'C',
-    desc: 'Programming language'
-  },
+  // {
+  //   imgSrc: '/images/c.svg',
+  //   label: 'C',
+  //   desc: 'Programming language'
+  // },
   {
     imgSrc: '/images/java.svg',
     label: 'Java',

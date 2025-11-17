@@ -3,6 +3,12 @@ import React from 'react';
 const Qualifications = () => {
   const experienceData = [
     {
+      company: "HearingZen",
+      role: "Frontend Developer",
+      description: "(In collaboration with React, Bootstrap, Node.js and RestAPI)",
+      duration: "Sept 2025 - Nov 2025"
+    },
+    {
       company: "Web Developer Intern, Teachnook ",
       role: "Web Developer",
       description: "(In collaboration with React, Node.js, MongoDB)",
@@ -43,7 +49,7 @@ const Qualifications = () => {
   const educationData = [
     {
       institution: "Centurion University of Technology and Management, Parlakhemundi",
-      degree: "Bachelor of Technology in Computer Science and Engineering: ",
+      degree: "Bachelor of Technology in Computer Science and Engineering",
       duration: "2022 - Present",
       marks: "CGPA - 9.37 Contd."
     },

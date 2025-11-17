@@ -6,7 +6,7 @@ import { ButtonPrimary, ButtonOutline } from './Button';
 
 const Hero = () => {
   return (
-    <section id="home" className="pt-24 sm:pt-28 md:pt-32 lg:pt-44">
+    <section id="home" className="pt-24 sm:pt-28 md:pt-32 ">
   <div className="container flex flex-col-reverse items-center lg:grid lg:grid-cols-2 lg:gap-10">
     
     {/* TEXT SECTION */}
@@ -26,7 +26,7 @@ const Hero = () => {
         <ButtonPrimary 
           label="Download CV" 
           icon="download" 
-          href="/images/Vaddadi_Rushikesh_Resume.pdf" 
+          href="/images/Rushi Resume.pdf" 
           download
           />
         <ButtonOutline href="#about" label="Scroll down" icon="arrow_downward" />
